@@ -1,10 +1,10 @@
-# PRD: Think Locally — Apple Intelligence Playground
+# PRD: Think Local — Apple Intelligence Playground
 
 > **Your mind. Your machine. No cloud required.**
 
 ## Vision
 
-Think Locally is a native macOS app that lets developers explore everything Apple Intelligence can do on-device. Chat, generate images, prototype structured output schemas, test tool calling — all running on the Neural Engine with zero API keys, zero cost, and zero data leaving the machine.
+Think Local is a native macOS app that lets developers explore everything Apple Intelligence can do on-device. Chat, generate images, prototype structured output schemas, test tool calling — all running on the Neural Engine with zero API keys, zero cost, and zero data leaving the machine.
 
 ## Target audience
 
@@ -31,7 +31,7 @@ Think Locally is a native macOS app that lets developers explore everything Appl
 
 - Pure SwiftUI, NavigationSplitView (3 columns)
 - No external dependencies beyond Apple frameworks
-- Local persistence: ~/Library/Application Support/ThinkLocally/
+- Local persistence: ~/Library/Application Support/ThinkLocal/
 - State restoration via @SceneStorage
 - Open source, MIT license
 
@@ -43,7 +43,7 @@ Think Locally is a native macOS app that lets developers explore everything Appl
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
-│ ◀▶  Think Locally        [NE: ● 38 tok/s]        [⌘K]  [⌘⇧I]        │
+│ ◀▶  Think Local        [NE: ● 38 tok/s]        [⌘K]  [⌘⇧I]        │
 ├────────────┬──────────────────────────────────┬─────────────────────────┤
 │  Chat   ⌘1│                                  │   INSPECTOR (300pt)     │
 │  Image  ⌘2│     PRIMARY CANVAS               │   collapsible ⌘⇧I      │
@@ -162,13 +162,13 @@ Split chat canvas: same prompt, different parameters, simultaneous execution. Si
 
 **Objective**: Create the Xcode project with the basic SwiftUI app structure.
 **Depends on**: nothing.
-**Deliverable**: ThinkLocally.xcodeproj with App entry point, basic WindowGroup, Info.plist configured for macOS 26+.
+**Deliverable**: ThinkLocal.xcodeproj with App entry point, basic WindowGroup, Info.plist configured for macOS 26+.
 
 **Acceptance criteria**:
 
 - Project compiles and runs on macOS 26+
 - App icon placeholder set
-- Bundle ID: dev.frr.thinklocally
+- Bundle ID: dev.frr.thinklocal
 - Minimum deployment target: macOS 26.0
 - MIT LICENSE file present
 - Basic README.md with project description
@@ -321,7 +321,7 @@ Split chat canvas: same prompt, different parameters, simultaneous execution. Si
 
 **Acceptance criteria**:
 
-- Sessions auto-save to ~/Library/Application Support/ThinkLocally/sessions/
+- Sessions auto-save to ~/Library/Application Support/ThinkLocal/sessions/
 - Session list in sidebar grouped by date (today, yesterday, older dates)
 - Click session to restore full conversation with parameters
 - Delete session with swipe or context menu

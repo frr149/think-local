@@ -1,5 +1,5 @@
 import Testing
-@testable import ThinkLocally
+@testable import ThinkLocal
 
 @Test func sidebarShowsFiveModes() {
     #expect(AppMode.allCases.count == 5)

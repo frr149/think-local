@@ -1,4 +1,4 @@
-# Contributing to Think Locally
+# Contributing to Think Local
 
 Thank you for your interest in contributing!
 
@@ -13,7 +13,7 @@ Thank you for your interest in contributing!
 
 - **Build**: `swift build`
 - **Test**: `swift test`
-- **Run**: `swift run ThinkLocally` or press ⌘R in Xcode
+- **Run**: `swift run ThinkLocal` or press ⌘R in Xcode
 
 ## Guidelines
 

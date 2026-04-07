@@ -1,6 +1,6 @@
 import Testing
 import Foundation
-@testable import ThinkLocally
+@testable import ThinkLocal
 
 @Test func exportFormatFileExtensions() {
     #expect(ExportFormat.markdown.fileExtension == "md")

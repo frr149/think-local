@@ -1,4 +1,4 @@
-# Think Locally
+# Think Local
 
 > Your mind. Your machine. No cloud required.
 
@@ -21,9 +21,9 @@ A native macOS app to explore everything Apple Intelligence can do on-device. Ch
 - **Parameter Tuner** — Temperature, sampling, max tokens with instant feedback
 - **Compare Mode** — Same prompt, different parameters, side by side
 
-## Why Think Locally?
+## Why Think Local?
 
-|                       | Think Locally           | ChatGPT Desktop   | Claude Desktop    |
+|                       | Think Local             | ChatGPT Desktop   | Claude Desktop    |
 | --------------------- | ----------------------- | ----------------- | ----------------- |
 | **Privacy**           | 100% on-device          | Cloud             | Cloud             |
 | **Cost**              | Free forever            | Subscription      | Subscription      |
@@ -42,25 +42,25 @@ A native macOS app to explore everything Apple Intelligence can do on-device. Ch
 ## Build & Run
 
 ```bash
-git clone https://github.com/anthropics/think-locally.git
-cd think-locally
+git clone https://github.com/frr149/think-local.git
+cd think-local
 open Package.swift  # Opens in Xcode
 # Or build from terminal:
 swift build
-swift run ThinkLocally
+swift run ThinkLocal
 ```
 
 ## Architecture
 
-Think Locally is a pure SwiftUI app with zero external dependencies. It uses:
+Think Local is a pure SwiftUI app with zero external dependencies. It uses:
 
 - **FoundationModels** — Apple's on-device language model framework
 - **ImagePlayground** — On-device image generation
 - **NavigationSplitView** — Three-column layout (sidebar, canvas, inspector)
 
 ```
-Sources/ThinkLocally/
-├── ThinkLocallyApp.swift     # App entry point
+Sources/ThinkLocal/
+├── ThinkLocalApp.swift     # App entry point
 ├── Design/                   # Theme, colors, typography
 ├── Services/                 # ModelService, ImageService, ResourceMonitor
 ├── Views/

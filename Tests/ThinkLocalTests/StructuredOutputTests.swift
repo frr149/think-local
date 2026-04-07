@@ -1,6 +1,6 @@
 import Foundation
 import Testing
-@testable import ThinkLocally
+@testable import ThinkLocal
 
 @Test func schemaExampleLoads() {
     let schema = SchemaDefinition.weatherExample

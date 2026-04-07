@@ -1,6 +1,6 @@
 import Foundation
 import Testing
-@testable import ThinkLocally
+@testable import ThinkLocal
 
 @Test func messageRoleLabels() {
     let user = ChatMessage(role: .user, content: "Hello")

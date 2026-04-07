@@ -8,7 +8,7 @@ struct AboutView: View {
                 .font(.system(size: 64))
                 .foregroundStyle(Color.amberGold)
 
-            Text("Think Locally")
+            Text("Think Local")
                 .font(.title.bold())
 
             Text("Your mind. Your machine. No cloud required.")

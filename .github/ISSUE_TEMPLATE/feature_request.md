@@ -1,6 +1,6 @@
 ---
 name: Feature Request
-about: Suggest a feature for Think Locally
+about: Suggest a feature for Think Local
 labels: enhancement
 ---
 

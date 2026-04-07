@@ -2,17 +2,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "ThinkLocally",
+    name: "ThinkLocal",
     platforms: [.macOS("26.0")],
     targets: [
         .executableTarget(
-            name: "ThinkLocally",
-            path: "Sources/ThinkLocally"
+            name: "ThinkLocal",
+            path: "Sources/ThinkLocal"
         ),
         .testTarget(
-            name: "ThinkLocallyTests",
-            dependencies: ["ThinkLocally"],
-            path: "Tests/ThinkLocallyTests"
+            name: "ThinkLocalTests",
+            dependencies: ["ThinkLocal"],
+            path: "Tests/ThinkLocalTests"
         ),
     ]
 )

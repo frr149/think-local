@@ -1,5 +1,5 @@
 import Testing
-@testable import ThinkLocally
+@testable import ThinkLocal
 
 @Test func modelAvailabilityDescriptions() {
     // Test that each ModelAvailability case can be matched

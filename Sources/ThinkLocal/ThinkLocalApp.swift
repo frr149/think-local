@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct ThinkLocallyApp: App {
+struct ThinkLocalApp: App {
     @Environment(\.openWindow) var openWindow
     @FocusedValue(\.appAction) var appAction
 
@@ -12,7 +12,7 @@ struct ThinkLocallyApp: App {
         .defaultSize(width: 1200, height: 800)
         .windowResizability(.contentMinSize)
 
-        Window("About Think Locally", id: "about") {
+        Window("About Think Local", id: "about") {
             AboutView()
         }
         .windowResizability(.contentSize)
@@ -20,7 +20,7 @@ struct ThinkLocallyApp: App {
 
         .commands {
             CommandGroup(replacing: .appInfo) {
-                Button("About Think Locally") {
+                Button("About Think Local") {
                     openWindow(id: "about")
                 }
             }

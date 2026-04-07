@@ -1,5 +1,5 @@
 import Testing
-@testable import ThinkLocally
+@testable import ThinkLocal
 
 @Test @MainActor func resourceMonitorInitialState() {
     let monitor = ResourceMonitorService()

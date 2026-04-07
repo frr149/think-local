@@ -1,6 +1,6 @@
 ---
 name: Bug Report
-about: Report a bug in Think Locally
+about: Report a bug in Think Local
 labels: bug
 ---
 
@@ -20,4 +20,4 @@ What you expected to happen.
 
 - macOS version:
 - Mac model (chip):
-- Think Locally version:
+- Think Local version:

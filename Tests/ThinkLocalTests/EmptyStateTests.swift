@@ -1,5 +1,5 @@
 import Testing
-@testable import ThinkLocally
+@testable import ThinkLocal
 
 @Test func firstRunManagerTracksState() {
     // We can't easily test UserDefaults in unit tests without a custom suite,

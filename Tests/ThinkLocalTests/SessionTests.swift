@@ -1,6 +1,6 @@
 import Testing
 import Foundation
-@testable import ThinkLocally
+@testable import ThinkLocal
 
 @Test func sessionTitleFromFirstUserMessage() {
     var session = Session()

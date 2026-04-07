@@ -1,6 +1,6 @@
 import Testing
 import SwiftUI
-@testable import ThinkLocally
+@testable import ThinkLocal
 
 @Test func colorsResolve() {
     let amber = Color.amberGold

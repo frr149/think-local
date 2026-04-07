@@ -41,7 +41,7 @@ final class SessionStore {
 
     init() {
         let appSupport = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-        directory = appSupport.appendingPathComponent("ThinkLocally/sessions", isDirectory: true)
+        directory = appSupport.appendingPathComponent("ThinkLocal/sessions", isDirectory: true)
         try? FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
         loadAll()
     }

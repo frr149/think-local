@@ -1,5 +1,5 @@
 import Testing
-@testable import ThinkLocally
+@testable import ThinkLocal
 
 @Test func toolDefinitionExample() {
     let tool = ToolDefinition.weatherExample

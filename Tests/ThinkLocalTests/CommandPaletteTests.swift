@@ -1,5 +1,5 @@
 import Testing
-@testable import ThinkLocally
+@testable import ThinkLocal
 
 @Test func commandRegistrySearchFilters() {
     let registry = CommandRegistry()

@@ -1,5 +1,5 @@
 import Testing
-@testable import ThinkLocally
+@testable import ThinkLocal
 
 // MARK: - Temperature description helper (mirrors ParameterTunerView logic)
 
