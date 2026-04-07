@@ -1,0 +1,43 @@
+name: ThinkLocal
+options:
+  bundleIdPrefix: dev.frr
+  deploymentTarget:
+    macOS: "26.0"
+  xcodeVersion: "16.0"
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MACOSX_DEPLOYMENT_TARGET: "26.0"
+    DEVELOPMENT_TEAM: FSN8S6V7MF
+    CODE_SIGN_STYLE: Automatic
+
+targets:
+  ThinkLocal:
+    type: application
+    platform: macOS
+    bundleIdPrefix: dev.frr
+    sources:
+      - Sources/ThinkLocal
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.frr.thinklocal
+        PRODUCT_NAME: ThinkLocal
+        INFOPLIST_FILE: Sources/ThinkLocal/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Sources/ThinkLocal/ThinkLocal.entitlements
+        ENABLE_HARDENED_RUNTIME: YES
+    dependencies:
+      - sdk: FoundationModels.framework
+      - sdk: ImagePlayground.framework
+
+  ThinkLocalTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - Tests/ThinkLocalTests
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.frr.thinklocaltests
+    dependencies:
+      - target: ThinkLocal
