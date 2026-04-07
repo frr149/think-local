@@ -67,15 +67,15 @@ struct InspectorView: View {
             }
         }
         .scrollIndicators(.never)
-        .frame(width: Theme.inspectorWidth, alignment: .leading)
+        .frame(maxWidth: .infinity)
     }
 
     private var contextualInfo: String {
         switch mode {
-        case .chat:         return "Adjust temperature and sampling to control response creativity and diversity."
-        case .imageStudio:  return "Temperature affects variation in generated descriptions and prompts."
-        case .schemas:      return "Lower temperature recommended for structured output accuracy."
-        case .toolsLab:     return "Greedy sampling ensures deterministic tool call selection."
+        case .chat:         return "Temperature: how random the responses are — 0 is deterministic, 2 is chaotic. Sampling: greedy always picks the most likely word; top-k and top-p sample from the top candidates, producing more varied text."
+        case .imageStudio:  return "Temperature affects how literally the model follows your prompt. Lower = closer to description, higher = more creative interpretation."
+        case .schemas:      return "Use low temperature (0–0.3) for structured output. Higher values risk the model straying from the schema."
+        case .toolsLab:     return "Greedy sampling (temperature 0) ensures the model always picks the same tool for the same input — best for testing deterministic tool selection."
         case .modelInfo:    return "Parameters shown here will apply to any test generations."
         }
     }

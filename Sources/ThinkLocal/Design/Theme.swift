@@ -2,7 +2,7 @@ import SwiftUI
 
 enum Theme {
     static let sidebarWidth: CGFloat = 200
-    static let inspectorWidth: CGFloat = 300
+    static let inspectorWidth: CGFloat = 320
     static let minWindowWidth: CGFloat = 900
     static let minWindowHeight: CGFloat = 600
     static let tokenBarHeight: CGFloat = 24

@@ -91,7 +91,7 @@ struct ParameterTunerView: View {
             }
 
             Slider(value: $parameters.temperature, in: 0...2, step: 0.1)
-                .accentColor(.amberGold)
+                .tint(.amberGold)
 
             Text(temperatureDescription(parameters.temperature))
                 .font(.caption2)
@@ -196,7 +196,7 @@ struct ParameterTunerView: View {
                     .font(.system(.body, design: .monospaced))
             }
             Slider(value: currentTopK, in: 1...100, step: 1)
-                .accentColor(.amberGold)
+                .tint(.amberGold)
         }
     }
 
@@ -211,7 +211,7 @@ struct ParameterTunerView: View {
                     .font(.system(.body, design: .monospaced))
             }
             Slider(value: currentTopP, in: 0...1, step: 0.05)
-                .accentColor(.amberGold)
+                .tint(.amberGold)
         }
     }
 
@@ -251,7 +251,7 @@ struct ParameterTunerView: View {
                 in: 1...4096,
                 step: 1
             )
-            .accentColor(.amberGold)
+            .tint(.amberGold)
         }
     }
 

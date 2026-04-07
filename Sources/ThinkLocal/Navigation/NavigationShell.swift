@@ -195,6 +195,7 @@ struct NavigationShell: View {
         .focusedValue(\.appAction, handleAction)
         .inspector(isPresented: $showInspector) {
             InspectorView(mode: selectedMode, parameters: $parameters, systemPrompt: $systemPrompt)
+                .inspectorColumnWidth(min: 260, ideal: 300, max: 380)
         }
         // Command palette overlay
         .overlay {

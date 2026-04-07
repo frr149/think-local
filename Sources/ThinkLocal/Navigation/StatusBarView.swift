@@ -29,7 +29,7 @@ struct StatusBarView: View {
                 Text(parameters.summary)
                     .statusTextStyle()
             } else {
-                Text("macOS 26 · Apple Silicon")
+                Text("macOS 26 · Apple Silicon · v\(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "?") (\(Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "?"))")
                     .statusTextStyle()
             }
         }
