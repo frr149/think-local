@@ -26,13 +26,13 @@ struct ImageStudioView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            promptBar
-            Divider()
             canvasArea
             if !history.isEmpty {
                 Divider()
                 historyBar
             }
+            Divider()
+            promptBar
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }

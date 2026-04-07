@@ -10,7 +10,7 @@ struct ResourceMonitorBadge: View {
 
     var body: some View {
         HStack(spacing: 4) {
-            Text("NE:")
+            Text("Neural Engine:")
                 .statusTextStyle()
 
             Circle()
