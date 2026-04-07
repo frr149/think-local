@@ -9,7 +9,7 @@ struct InspectorView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 0) {
                 // Parameters section
-                VStack(alignment: .leading, spacing: 12) {
+                VStack(alignment: .leading, spacing: 16) {
                     Text("Parameters")
                         .font(.caption)
                         .foregroundStyle(.secondary)
@@ -19,13 +19,14 @@ struct InspectorView: View {
 
                     ParameterTunerView(parameters: $parameters)
                 }
-                .padding()
+                .padding(.horizontal, 20)
+                .padding(.vertical, 20)
 
                 Divider()
 
                 // System prompt (chat mode only)
                 if mode == .chat, let systemPrompt {
-                    VStack(alignment: .leading, spacing: 8) {
+                    VStack(alignment: .leading, spacing: 10) {
                         Text("System Prompt")
                             .font(.caption)
                             .foregroundStyle(.secondary)
@@ -35,18 +36,19 @@ struct InspectorView: View {
 
                         TextEditor(text: systemPrompt)
                             .font(.system(.caption, design: .monospaced))
-                            .frame(minHeight: 60, maxHeight: 120)
+                            .frame(minHeight: 72, maxHeight: 140)
                             .scrollContentBackground(.hidden)
-                            .padding(6)
+                            .padding(8)
                             .background(Color(nsColor: .controlBackgroundColor), in: .rect(cornerRadius: 6))
                     }
-                    .padding()
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 20)
 
                     Divider()
                 }
 
                 // Contextual info section
-                VStack(alignment: .leading, spacing: 8) {
+                VStack(alignment: .leading, spacing: 10) {
                     Text("Context")
                         .font(.caption)
                         .foregroundStyle(.secondary)
@@ -58,11 +60,13 @@ struct InspectorView: View {
                         .font(.caption)
                         .foregroundStyle(.secondary)
                 }
-                .padding()
+                .padding(.horizontal, 20)
+                .padding(.vertical, 20)
 
                 Spacer(minLength: 0)
             }
         }
+        .scrollIndicators(.never)
         .frame(width: Theme.inspectorWidth, alignment: .leading)
     }
 

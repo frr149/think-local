@@ -50,7 +50,7 @@ struct ParameterTunerView: View {
     @State private var maxTokensText: String = ""
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 16) {
+        VStack(alignment: .leading, spacing: 20) {
             temperatureSection
             Divider()
             samplingSection
@@ -64,7 +64,7 @@ struct ParameterTunerView: View {
     // MARK: Temperature
 
     private var temperatureSection: some View {
-        VStack(alignment: .leading, spacing: 6) {
+        VStack(alignment: .leading, spacing: 8) {
             HStack {
                 Text("Temperature")
                     .font(.caption)
@@ -160,7 +160,7 @@ struct ParameterTunerView: View {
     }
 
     private var samplingSection: some View {
-        VStack(alignment: .leading, spacing: 8) {
+        VStack(alignment: .leading, spacing: 10) {
             Text("Sampling")
                 .font(.caption)
                 .foregroundStyle(.secondary)
@@ -218,7 +218,7 @@ struct ParameterTunerView: View {
     // MARK: Max tokens
 
     private var maxTokensSection: some View {
-        VStack(alignment: .leading, spacing: 6) {
+        VStack(alignment: .leading, spacing: 8) {
             HStack {
                 Text("Max tokens")
                     .font(.caption)

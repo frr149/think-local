@@ -198,14 +198,3 @@ struct ImageStudioView: View {
     }
 }
 
-// MARK: - ImagePlaygroundStyle + Hashable
-
-extension ImagePlaygroundStyle: @retroactive Hashable {
-    public func hash(into hasher: inout Hasher) {
-        hasher.combine(displayName)
-    }
-
-    public static func == (lhs: ImagePlaygroundStyle, rhs: ImagePlaygroundStyle) -> Bool {
-        lhs.displayName == rhs.displayName
-    }
-}
